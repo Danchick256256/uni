@@ -1,166 +1,77 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="RU">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
-
-    <title>Product example for Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/product/">
-    <link rel="stylesheet" href="index.css">
+    <title>Table with Dynamic Cell Positioning</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+<body>
+<table id="myTable" class="elements">
+    <tr class="row-headers">
+        <th class="row-header">
+            <input autocomplete="off"
+                   class="input-header"
+                   id="university_name"
+                   type="text"
+                   name="username"
+                   value=""
+                   placeholder="University name"
+            />
+        </th>
+        <th class="row-header">
+            <input  autocomplete="off"
+                    class="input-header"
+                    id="faculty_name"
+                    type="text"
+                    name="username"
+                    value=""
+                    placeholder="Faculty name"
+            />
+        </th>
+        <th class="row-header">
+            <input autocomplete="off"
+                   class="input-header"
+                   id="military"
+                   type="text"
+                   name="username"
+                   value=""
+                   placeholder="Military department"
+            />
+        </th>
+        <th class="row-header">
+            <input autocomplete="off"
+                   class="input-header"
+                   id="score"
+                   type="text"
+                   name="username"
+                   value=""
+                   placeholder="Score"
+            />
+        </th>
+        <th class="row-header">
+            <input autocomplete="off"
+                   class="input-header"
+                   id="fee"
+                   type="text"
+                   name="username"
+                   value=""
+                   placeholder="Tuition fee"
+            />
+        </th>
+    </tr>
+</table>
 
-<body class="body">
-
-
-<div class="search-boxen">
-    <div class="search-result">
-        <div class="benchmarks table">
-            <ul class="table-header">
-                <li class="th">ВУЗ</li>
-                <li class="th"><label class="label__class">БЮДЖЕТ</label></li>
-            </ul>
-
-            <ul class="table-body">
-                <li class="tr">
-                    <span class="metric td">Лингвистика<label class="label__class">Санкт-Петербургский политехнический университет Петра Великого</label></span>
-                    <span class="td percentile-10"><span class="number">от 296</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Лингвистика<label class="label__class">ЛЭТИ</label></span>
-                    <span class="td percentile-15"><span class="number">от 289</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Юриспруденция<label class="label__class">НИУ ВШЭ — Санкт-Петербург</label></span>
-                    <span class="td percentile-16"><span class="number">от 288</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Лингвистика<label class="label__class">Ленинградский государственный университет имени А. С. Пушкина</label></span>
-                    <span class="td percentile-18"><span class="number">от 283</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Реклама и связи с общественностью<label class="label__class">ЛЭТИ</label></span>
-                    <span class="td percentile-20"><span class="number">от 282</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Конфликтология<label class="label__class">Санкт-Петербургский государственный университет</label></span>
-                    <span class="td percentile-22"><span class="number">от 280</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Издательское дело<label class="label__class">Санкт-Петербургский политехнический университет Петра Великого</label></span>
-                    <span class="td percentile-23"><span class="number">от 279</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Лингвистика <label class="label__class">СПбГУП</label></span>
-                    <span class="td percentile-24"><span class="number">от 276</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Культурология<label class="label__class">Санкт-Петербургский государственный университет</label></span>
-                    <span class="td percentile-24"><span class="number">от 276</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Государственное и муниципальное управление<label class="label__class">НИУ ВШЭ — Санкт-Петербург</label></span>
-                    <span class="td percentile-25"><span class="number">от 275</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Гостиничное дело<label class="label__class">Санкт-Петербургский государственный экономический университет</label></span>
-                    <span class="td percentile-26"><span class="number">от 274</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Гостиничное дело<label class="label__class">Санкт-Петербургский политехнический университет Петра Великого</label></span>
-                    <span class="td percentile-28"><span class="number">от 267</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Реклама и связи с общественностью<label class="label__class">РАНХиГС</label></span>
-                    <span class="td percentile-30"><span class="number">от 265</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Юриспруденция<label class="label__class">Российская таможенная академия</label></span>
-                    <span class="td percentile-31"><span class="number">от 263</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Конфликтология<label class="label__class">СПбГУП</label></span>
-                    <span class="td percentile-40"><span class="number">от 246</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Философия<label class="label__class">Русская христианская гуманитарная академия (РХГА)</label></span>
-                    <span class="td percentile-42"><span class="number">от 241</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Таможенное дело<label class="label__class">Российская таможенная академия</label></span>
-                    <span class="td percentile-42"><span class="number">от 241</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Социология<label class="label__class">Санкт-Петербургский государственный университет</label></span>
-                    <span class="td percentile-50"><span class="number">от 235</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Гостиничное дело<label class="label__class">Ленинградский государственный университет имени А. С. Пушкина</label></span>
-                    <span class="td percentile-55"><span class="number">от 228</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Реклама и связи с общественностью<label class="label__class">Санкт-Петербургский государственный институт кино и телевидения</label></span>
-                    <span class="td percentile-60"><span class="number">от 209</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Реклама и связи с общественностью<label class="label__class">СПбГУП</label></span>
-                    <span class="td percentile-70"><span class="number">от 175</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Педагогическое образование<label class="label__class">РГПУ</label></span>
-                    <span class="td percentile-80"><span class="number">от 162</span></span>
-                </li>
-            </ul>
-        </div>
-        <div class="div__class"></div>
-        <div class="benchmarks table">
-            <ul class="table-header">
-                <li class="th">ВУЗ</li>
-                <li class="th"><label class="label__class">ПЛАТНОЕ</label></li>
-            </ul>
-            <ul class="table-body">
-                <li class="tr">
-                    <span class="metric td">Реклама и связи с общественностью<label class="label__class">СПбГТИ</label></span>
-                    <span class="td percentile-90"><span class="number">от 43000 ₽, от 115</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Культурология<label class="label__class">Санкт-Петербургский реставрационно-строительный институт</label></span>
-                    <span class="td percentile-90"><span class="number">от 80000 ₽, от 100</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Юриспруденция<label class="label__class">ИФ ГУАП</label></span>
-                    <span class="td percentile-90"><span class="number">от 50000 ₽, от 136</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Таможенное дело<label class="label__class">ИФ ГУАП</label></span>
-                    <span class="td percentile-90"><span class="number">от 60000 ₽, от 136</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Лингвистика<label class="label__class">СПбГУП</label></span>
-                    <span class="td percentile-90"><span class="number">от 85000 ₽, от 154</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Лингвистика<label class="label__class">Санкт-Петербургский университет технологий управления и экономики</label></span>
-                    <span class="td percentile-90"><span class="number">от 78000 ₽, от 90</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Издательское дело<label class="label__class">Санкт-Петербургский университет технологий управления и экономики</label></span>
-                    <span class="td percentile-90"><span class="number">от 66000 ₽, от 100</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Гостиничное дело<label class="label__class">Санкт-Петербургский университет технологий управления и экономики</label></span>
-                    <span class="td percentile-90"><span class="number">от 66000 ₽, от 100</span></span>
-                </li>
-                <li class="tr">
-                    <span class="metric td">Реклама и связи с общественностью<label class="label__class">ВОЕНМЕХ</label></span>
-                    <span class="td percentile-90"><span class="number">от 64500 ₽, от 115</span></span>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-</div>
+<script defer="defer" type="module" src="scripts/index.js"></script>
 </body>
+<template class="card__template">
+    <tr id="" class="card">
+        <td class="card-university-name"></td>
+        <td class="card-faculty-name"></td>
+        <td class="card-military"></td>
+        <td class="card-score"></td>
+        <td>
+            <div class="card-fee"></div>
+            <button class="card-delete-button"></button>
+        </td>
+    </tr>
+</template>
 </html>
